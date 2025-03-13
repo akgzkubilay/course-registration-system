@@ -1,0 +1,50 @@
+@model Candidate
+<form>
+<div class="from-group my-2">
+    <label>Email</label>
+    <input  name="Email"  class="form-control">
+</div>
+<div class="from-group my-2">
+    <label>FirstName</label>
+    <input  name="FirstName"  class="form-control">
+</div>
+<div class="from-group my-2">
+    <label>LastName</label>
+    <input  name="LastName"  class="form-control">
+</div>
+<div class="from-group my-2">
+    <label>Age</label>
+    <select name="Age" id="" class="form-control">
+        
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+    </select>
+</div>
+
+<fieldset>
+    <legend>Select One Course</legend>
+<div class="from-check my-2" >
+    <input class="form-check-input" type="radio" id="mvc" name="selectedCourse" value="ASP .NET CORE MVC">
+    <label class="form-check-label">ASP .NET CORE MVC</label>
+</div>
+<div class="from-check my-2" >
+    <input id="api" class="from-check-input" type="radio" name="selectedCourse" value="ASP .NET API">
+    <label class="form-check-label">ASP .NET CORE API</label>
+</div>
+<div class="from-check my-2" >
+    <input id="Blozer" class="from-check-input" type="radio" name="selectedCourse" value="blozer">
+    <label class="form-check-label">BLOZER</label>
+</div>
+</fieldset>
+
+
+<div class="from-group my-2">
+    <button type="submit" class="btn btn-primary my-2">Apply</button>
+    <button type="button" class="btn btn-warning" href>Home</button>
+</div>
+</form>
