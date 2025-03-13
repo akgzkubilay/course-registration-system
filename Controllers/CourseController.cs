@@ -13,14 +13,7 @@ namespace KursKayıtSıstemı.Controllers
         {
             return View();
         }
-
-         
-         
-
-
-
-
-        
+  
     }
     
 }
