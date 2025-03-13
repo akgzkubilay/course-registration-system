@@ -95,3 +95,4 @@ C:\BTK .net Dersi\KursKayıtSıstemı\obj\Debug\net9.0\refint\KursKayıtSıstem�
 C:\BTK .net Dersi\KursKayıtSıstemı\obj\Debug\net9.0\KursKayıtSıstemı.pdb
 C:\BTK .net Dersi\KursKayıtSıstemı\obj\Debug\net9.0\KursKayıtSıstemı.genruntimeconfig.cache
 C:\BTK .net Dersi\KursKayıtSıstemı\obj\Debug\net9.0\ref\KursKayıtSıstemı.dll
+C:\BTK .net Dersi\KursKayıtSıstemı\obj\Debug\net9.0\KursKayıtSıstemı.sourcelink.json
