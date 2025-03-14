@@ -1,4 +1,5 @@
 
+using KursKayıtSıstemı.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KursKayıtSıstemı.Controllers
@@ -10,6 +11,12 @@ namespace KursKayıtSıstemı.Controllers
             return View();
         }
         public IActionResult Apply()
+        {
+            return View();
+        }
+        [HttpPost]
+     
+        public IActionResult Apply([FromForm] Candidate model)
         {
             return View();
         }
