@@ -21,7 +21,7 @@ namespace KursKayıtSıstemı.Controllers
             
             
             Repository.Add(model);
-            return Redirect("/");
+            return View("feedback", model);
         }
   
     }
