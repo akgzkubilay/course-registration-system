@@ -8,7 +8,8 @@ namespace KursKayıtSıstemı.Controllers
     { 
         public IActionResult Index()
         {
-            return View();
+            var model = Repository.Applications;
+            return View(model);
         }
         public IActionResult Apply()
         {
