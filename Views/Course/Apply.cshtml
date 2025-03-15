@@ -1,20 +1,25 @@
 @model Candidate
-<form method="post" action="/Course/Apply">
+ <!-- #region 
+<form method="post" asp-action="Apply">
+bu kısımda /course/Apply yazmak zorunda değiliz get ile gelen sayfa corusecontorllerden geldiği için
+asp-action="Apply" yeterli olacaktır.
+    #region  -->
+<form method="post" asp-action="Apply">
 <div class="from-group my-2">
-    <label>Email</label>
-    <input  name="Email"  class="form-control">
+    <label asp-for="Email"></label>
+    <input  asp-for="Email"  class="form-control">
 </div>
 <div class="from-group my-2">
-    <label>FirstName</label>
-    <input  name="FirstName"  class="form-control">
+    <label asp-for="FirstName"></label>
+    <input  asp-for="FirstName"  class="form-control">
 </div>
 <div class="from-group my-2">
-    <label>LastName</label>
-    <input  name="LastName"  class="form-control">
+    <label asp-for="LastName"></label>
+    <input  asp-for="LastName" class="form-control">
 </div>
 <div class="from-group my-2">
-    <label>Age</label>
-    <select name="Age" id="" class="form-control">
+    <label asp-for="Age"></label>
+    <select asp-for="Age"  id="" class="form-control">
         
         <option value="18">18</option>
         <option value="19">19</option>
@@ -29,15 +34,15 @@
 <fieldset>
     <legend>Select One Course</legend>
 <div class="from-check my-2" >
-    <input class="form-check-input" type="radio" id="mvc" name="selectedCourse" value="ASP .NET CORE MVC">
+    <input class="form-check-input" type="radio" id="mvc" asp-for="SelectedCourse" value="ASP .NET CORE MVC">
     <label class="form-check-label">ASP .NET CORE MVC</label>
 </div>
 <div class="from-check my-2" >
-    <input id="api" class="from-check-input" type="radio" name="selectedCourse" value="ASP .NET API">
+    <input id="api" class="from-check-input" type="radio" asp-for="SelectedCourse" value="ASP .NET API">
     <label class="form-check-label">ASP .NET CORE API</label>
 </div>
 <div class="from-check my-2" >
-    <input id="Blozer" class="from-check-input" type="radio" name="selectedCourse" value="blozer">
+    <input id="Blozer" class="from-check-input" type="radio" asp-for="SelectedCourse" value="blozer">
     <label class="form-check-label">BLOZER</label>
 </div>
 </fieldset>
