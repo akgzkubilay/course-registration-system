@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KursKayıtSıstemı")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd015611b36490319696e37b29368827cce00360")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87d1c758b01172c46160696b69d457b24863142d")]
 [assembly: System.Reflection.AssemblyProductAttribute("KursKayıtSıstemı")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KursKayıtSıstemı")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
