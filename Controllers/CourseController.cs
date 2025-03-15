@@ -19,10 +19,20 @@ namespace KursKayıtSıstemı.Controllers
      
         public IActionResult Apply([FromForm] Candidate model)
         {
-            
-            
-            Repository.Add(model);
+            if(Repository.Applications.Any(c=>c.Email == model.Email))
+            {
+                ModelState.AddModelError("Email", "This email address is already in use");
+            }
+            if(ModelState.IsValid)
+            {
+                Repository.Add(model);
             return View("feedback", model);
+            }
+            else
+            {
+                return View(model);
+            }
+          
         }
   
     }

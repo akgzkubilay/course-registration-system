@@ -5,6 +5,7 @@ bu kısımda /course/Apply yazmak zorunda değiliz get ile gelen sayfa corusecon
 asp-action="Apply" yeterli olacaktır.
     #region  -->
 <form method="post" asp-action="Apply">
+    <div class="text-danger" asp-validation-summary="All"></div>
 <div class="from-group my-2">
     <label asp-for="Email"></label>
     <input  asp-for="Email"  class="form-control">
@@ -35,7 +36,7 @@ asp-action="Apply" yeterli olacaktır.
 <fieldset>
     <legend>Select One Course</legend>
 <div class="from-check my-2" >
-    <input class="form-check-input" type="radio" id="mvc" asp-for="SelectedCourse" value="ASP .NET CORE MVC">
+    <input class="form-check-input" type="radio" id="mvc" asp-for="SelectedCourse" value="ASP .NET CORE MVC" checked>
     <label class="form-check-label">ASP .NET CORE MVC</label>
 </div>
 <div class="from-check my-2" >
